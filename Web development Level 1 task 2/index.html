@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <nav>
+    <div class="logo">Landing Page</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#" onclick="event.preventDefault(); toggleContact();">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Landing Page</h1>
+      <p>We create modern, responsive, and unique websites tailored to your vision.</p>
+      <a href="#" class="btn" onclick="event.preventDefault(); toggleContact();">Get Started</a>
+    </div>
+  </section>
+
+
+  <section class="main-content">
+    <div class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Web Design</li>
+        <li>Responsive Development</li>
+        <li>Landing Page Creation</li>
+        <li>Portfolio Website</li>
+        <li>Website Redesign</li>
+      </ul>
+    </div>
+
+  
+    <div class="about" id="about">
+      <h2>About Us</h2>
+      <p>
+        We’re a team of passionate web developers who bring ideas to life through elegant code and thoughtful design. Our goal is to build websites that are not just functional but also beautiful and unique. With a strong grasp of the latest trends and user-focused design, we ensure that every project stands out and meets your needs perfectly.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact hidden">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p><strong>Email:</strong> info@webcreator.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Location:</strong> India</p>
+    </div>
+  </section>
+
+ 
+  <script>
+    function toggleContact() {
+      const contactSection = document.getElementById("contact");
+      contactSection.classList.toggle("hidden");
+    }
+  </script>
+
+</body>
+</html>
